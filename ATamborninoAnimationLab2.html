@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Animation Lab</title>
+  </head>
+  <body>
+
+<text align:center;>
+<p>I awake to find my peace of mind</p>
+<p>I said, "How do you live as a fugitive"</p>
+<p>down here where I cannot see so clear?</p>
+<p>I said, "What do I know</p>
+<p>show me the right way to go"</p>
+</text>
+<br>
+<text align:center;>
+<p>and the spies came out of the water</p>
+<p>but you're feeling so bad 'cause you know</p>
+<p>that the spies hide out in every corner</p>
+<p>But you can't touch them no</p>
+<p>'cause they're all spies</p>
+<p>They're all spies</p>
+</text>
+
+
+<style>
+body{
+  background-color: black;
+}
+#bounce{background: white;
+height: 100px;
+width: 100px;
+border-color: red;
+border-radius: 50%;
+position: relative;
+left: 0px;
+top: 0px;
+}
+
+#bounce:hover{
+animation-name: bouncethat;
+animation-duration: 3s;
+animation-timing-function: ease;
+animation-iteration-count: infinite;
+}
+
+@keyframes bouncethat {
+
+0%{top: 0px; left: 0px;}
+50%{top: 200px; opacity:0.3; background: green; border-radius: 10%; left: 50px;}
+100%{top: 100px;}
+
+}
+</style>
+</head>
+
+<body>
+
+<div id="bounce">
+</div>
+
+  </body>
+</html>
