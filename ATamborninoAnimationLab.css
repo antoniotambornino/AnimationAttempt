@@ -1,0 +1,11 @@
+img {
+position: relative;
+clip: ;
+border-radius: 50%;
+}
+
+p {
+font-size: 200px;
+}
+
+#text {color: white;}

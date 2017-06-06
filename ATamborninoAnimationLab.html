@@ -4,83 +4,34 @@
     <meta charset="utf-8">
     <title>Animation Lab</title>
   </head>
+  <style>
+  #coldplaySpies {
+      width: 300px;
+      height: 300px;
+      background-color: black;
+      color: white;
+      position: absolute;
+      -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+      animation: mymove 5s infinite;
+      clip: rect(0,300px,300px,0);
+  }
+
+  /* Chrome, Safari, Opera */
+  @-webkit-keyframes mymove {
+      50% {clip: rect(0,50px,50px,0);}
+  }
+
+  /* Standard syntax */
+  @keyframes mymove {
+      50% {clip: rect(0,50px,50px,0);}
+  }
+  </style>
+  </head>
   <body>
 
-<text align:center>
-<p>The spies came out of the water</p>
-<p>And you're geeling so bad 'cause you know</p>
-<p>The the spies hide out in every corner</p>
-<p>But you can't touch them no</p>
-<p>'Cause they're all spies</p>
-</text>
-<br>
-<text align:center>
-<p>if we don't hide here</p>
-<p>they're gonna find us</p>
-<p>and if we don't hide now</p>
-<p>They're gonna catch us where we sleep</p>
-<p>Ah and if we don't hide here</p>
-<p>They're gonna find us</p>
-</text>
-
-<!-- NOTE: Keep both above passages. -->
-
-<!-- NOTE: where is the stuff from Zurb foundation?-->
-
-
-<style>
-body{
-  background-color: black;
-}
-#bounce{background: white;
-height: 100px;
-width: 100px;
-border-color: red;
-border-radius: 50%;
-position: relative;
-left: 0px;
-top: 0px;
-}
-
-#bounce:hover{
-animation-name: bouncethat;
-animation-duration: 3s;
-animation-timing-function: ease;
-animation-iteration-count: infinite;
-}
-/*animation-name: bouncethat;
-animation-duration: 2s;
-animation-timing-function: ease;
-animation-iteration-count: infinite;*/
-
-
-/*#bounce{background: red;
-height: 100px;
-width: 100px;
-border-radius: 50%;
-position: relative;
-left: 150px;
-top: 150px;
-animation-name: bouncethat;
-animation-duration: 2s;
-animation-timing-function: ease;
-animation-iteration-count: infinite;
-}*/
-
-@keyframes bouncethat {
-
-0%{top: 0px; left: 0px;}
-50%{top: 200px; opacity:0.3; background: green; border-radius: 10%; left: 50px;}
-100%{top: 100px;}
-
-}
-</style>
-</head>
-
-<body>
-
-<div id="bounce">
-</div>
+  <div id="coldplaySpies">
+    <h1>I awake to find my piece of mind. I said, "how do you live as a fugitive?"</h1>
+  </div>
 
   </body>
 </html>

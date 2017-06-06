@@ -4,62 +4,34 @@
     <meta charset="utf-8">
     <title>Animation Lab</title>
   </head>
+  <style>
+  #coldplaySpies {
+      width: 300px;
+      height: 300px;
+      background-color: black;
+      color: white;
+      position: absolute;
+      -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+      animation: mymove 5s infinite;
+      clip: rect(0,300px,300px,0);
+  }
+
+  /* Chrome, Safari, Opera */
+  @-webkit-keyframes mymove {
+      50% {clip: rect(0,50px,50px,0);}
+  }
+
+  /* Standard syntax */
+  @keyframes mymove {
+      50% {clip: rect(0,50px,50px,0);}
+  }
+  </style>
+  </head>
   <body>
 
-<text align:center;>
-<p>I awake to see that no one is free</p>
-<p>We're all fugitives</p>
-<p>Look at the way we live</p>
-<p>Down here I cannot sleep from fer no</p>
-<p>I said which way do I turn</p>
-<p>Oh I forget everything I learn</p>
-</text>
-<br>
-<text align:center;>
-<p>and the spies came out of the water</p>
-<p>but you're feeling so good 'cause you know</p>
-<p>that those spies hide out in every corner</p>
-<p>They can't touch you no</p>
-<p>'cause they're just spies</p>
-<p>They're just spies</p>
-</text>
-
-
-<style>
-body{
-  background-color: black;
-}
-#bounce{background: white;
-height: 100px;
-width: 100px;
-border-color: red;
-border-radius: 50%;
-position: relative;
-left: 0px;
-top: 0px;
-}
-
-#bounce:hover{
-animation-name: bouncethat;
-animation-duration: 3s;
-animation-timing-function: ease;
-animation-iteration-count: infinite;
-}
-
-@keyframes bouncethat {
-
-0%{top: 0px; left: 0px;}
-50%{top: 200px; opacity:0.3; background: green; border-radius: 10%; left: 50px;}
-100%{top: 100px;}
-
-}
-</style>
-</head>
-
-<body>
-
-<div id="bounce">
-</div>
+  <div id="coldplaySpies">
+    <h1>And if we don't hide here, they're gonna find us, and if we don't hide now, they're gonna catch us</h1>
+  </div>
 
   </body>
 </html>
